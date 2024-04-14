@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Maker</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Portfolio Maker</h1>
+        <form id="portfolioForm">
+            <fieldset>
+                <legend>Personal Details</legend>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Education</legend>
+                <label for="degree">Degree:</label>
+                <input type="text" id="degree" name="degree">
+                
+                <label for="university">University:</label>
+                <input type="text" id="university" name="university">
+                
+                <label for="year">Year:</label>
+                <input type="text" id="year" name="year">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Skills</legend>
+                <label for="skills">Skills (comma separated):</label>
+                <input type="text" id="skills" name="skills">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Projects</legend>
+                <label for="projects">Projects (one per line):</label>
+                <textarea id="projects" name="projects"></textarea>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="linkedin">LinkedIn:</label>
+                <input type="text" id="linkedin" name="linkedin">
+                
+                <label for="github">GitHub:</label>
+                <input type="text" id="github" name="github">
+            </fieldset>
+            
+            <button type="submit">Generate Portfolio</button>
+        </form>
+        
+        <div id="portfolio"></div>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+</html>
